@@ -19,6 +19,7 @@ import { MdAddHomeWork, MdListAlt, MdOutlineEventAvailable } from "react-icons/m
 import { useNavigate } from 'react-router-dom';
 import { authDataContext } from '../Context/AuthContext';
 import axios from 'axios';
+import { toast } from 'react-toastify';
 import { userDataContext } from '../Context/UserContext';
 import { listingDataContext } from '../Context/ListingContext';
 
@@ -39,8 +40,10 @@ function Nav() {
             console.log(res.data); // Should log {message: "Logout Successfully"}
             setUserData(null)       // Clear user context
             setShowpopup(false)     // Close popup
+            toast.success(res.data.message || "Logged out successfully");
             navigate("/login")      // Optional: redirect to login
         } catch (error) {
+            toast.error(error.response?.data?.message || "Logout failed");
             console.log(error)
         }
     }
