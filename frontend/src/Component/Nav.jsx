@@ -32,7 +32,7 @@ function Nav() {
     let { listingData, setNewListData, searchData, handleSearch, handleViewCard } = useContext(listingDataContext)
     let [input, setInput] = useState("")
 
-    // ---------- FIXED LOGOUT ----------
+    
     const handleLogOut = async () => {
         try {
             const res = await axios.post(serverUrl + "/api/auth/logout", {}, { withCredentials: true });
@@ -82,7 +82,7 @@ function Nav() {
         handleSearch(input)
     }, [input])
 
-    // close menu on outside click or Esc
+    // close menu on outside click 
     useEffect(() => {
         const handleClickOutside = (e) => {
             if (showpopup && menuRef.current && !menuRef.current.contains(e.target)) {
