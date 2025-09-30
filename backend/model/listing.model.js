@@ -55,7 +55,7 @@ const listingSchema = new mongoose.Schema({
         type:Number,
         min:0,
         max:5,
-        default:3
+        default:0
     },
     isBooked:{
         type:Boolean,
