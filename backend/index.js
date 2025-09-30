@@ -14,7 +14,7 @@ let app = express()
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin:"https://trip-mate-mn3ronavg-nareshs-projects-4e756fed.vercel.app",
     credentials:true
 }))
 // serve uploads if needed by multer
