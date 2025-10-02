@@ -1,7 +1,4 @@
-# Node.js dependencies
 node_modules/
-
-# Environment variables
 .env
 
 # Logs
@@ -9,13 +6,7 @@ logs
 *.log
 npm-debug.log*
 
-# OS files
-.DS_Store
-
-# Build outputs
 dist/
 build/
-
-# IDE files
 .vscode/
-.idea/
+
