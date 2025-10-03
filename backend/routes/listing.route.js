@@ -12,6 +12,8 @@ listingRouter.post("/add",isAuth,upload.fields([
     {name:"image3",maxCount:1}
 ]),addListing)
 
+//Handling listing routes
+
 listingRouter.get("/get",getListing)
 listingRouter.get("/findlistingbyid/:id",findListing)
 listingRouter.delete("/delete/:id",isAuth,deleteListing)
