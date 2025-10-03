@@ -8,7 +8,7 @@ import { userDataContext } from '../Context/UserContext';
 import { authDataContext } from '../Context/AuthContext';
 import { listingDataContext } from '../Context/ListingContext';
 import axios from 'axios';
-//Handling the Booking feature
+
 function Booked() {
     let { bookingData } = useContext(bookingDataContext)
     let [star, setStar] = useState(0)
@@ -16,7 +16,7 @@ function Booked() {
     let { getCurrentUser } = useContext(userDataContext)
     let { getListing, cardDetails } = useContext(listingDataContext)
     let navigate = useNavigate()
-   //Handling the rating 
+   
     const handleRating = async (id) => {
         try {
             let result = await axios.post(serverUrl + `/api/listing/ratings/${id}`, {
@@ -29,7 +29,7 @@ function Booked() {
             console.log(error)
         }
     }
-   //Handling the star rating
+   g
     const handleStar = async (value) => {
         setStar(value)
     }
