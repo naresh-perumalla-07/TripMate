@@ -8,7 +8,7 @@ import { userDataContext } from '../Context/UserContext';
 import { authDataContext } from '../Context/AuthContext';
 import { listingDataContext } from '../Context/ListingContext';
 import axios from 'axios';
-
+//Handling the Booking feature
 function Booked() {
     let { bookingData } = useContext(bookingDataContext)
     let [star, setStar] = useState(0)
