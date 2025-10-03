@@ -16,7 +16,7 @@ function Booked() {
     let { getCurrentUser } = useContext(userDataContext)
     let { getListing, cardDetails } = useContext(listingDataContext)
     let navigate = useNavigate()
-
+   //Handling the rating 
     const handleRating = async (id) => {
         try {
             let result = await axios.post(serverUrl + `/api/listing/ratings/${id}`, {
