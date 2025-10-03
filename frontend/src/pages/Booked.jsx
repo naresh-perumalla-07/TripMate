@@ -29,7 +29,7 @@ function Booked() {
             console.log(error)
         }
     }
-
+   //Handling the star rating
     const handleStar = async (value) => {
         setStar(value)
     }
