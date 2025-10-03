@@ -12,7 +12,7 @@ listingRouter.post("/add",isAuth,upload.fields([
     {name:"image3",maxCount:1}
 ]),addListing)
 
-//Handling listing routes
+//Handling listing routes for listing pages
 
 listingRouter.get("/get",getListing)
 listingRouter.get("/findlistingbyid/:id",findListing)
