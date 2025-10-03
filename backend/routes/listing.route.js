@@ -12,7 +12,7 @@ listingRouter.post("/add",isAuth,upload.fields([
     {name:"image3",maxCount:1}
 ]),addListing)
 
-//Handling listing routes for listing pages in Tripmate
+
 
 listingRouter.get("/get",getListing)
 listingRouter.get("/findlistingbyid/:id",findListing)
