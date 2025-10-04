@@ -21,4 +21,4 @@ const isAuth = async (req,res,next) => {
 }
 export default isAuth
 
-//This is a isAuth Route
+//This is a isAuth]
