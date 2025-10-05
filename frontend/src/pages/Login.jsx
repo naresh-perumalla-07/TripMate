@@ -110,6 +110,6 @@ function Login() {
   );
 }
 
-//This is a Login Page
+//This is a Login Page Route
 
 export default Login;
