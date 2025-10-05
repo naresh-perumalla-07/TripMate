@@ -110,6 +110,5 @@ function Login() {
   );
 }
 
-//This is a 
 
 export default Login;
